@@ -6,6 +6,7 @@ import '@fontsource/inter/variable-full.css'
 
 import { ThemeProvider } from 'next-themes'
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 
 import siteMetadata from '@/data/siteMetadata'
 import Analytics from '@/components/analytics'
@@ -16,6 +17,7 @@ const isDevelopment = process.env.NODE_ENV === 'development'
 const isSocket = process.env.SOCKET
 
 export default function App({ Component, pageProps }) {
+  const { pathname } = useRouter()
   return (
     <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
       <Head>
@@ -23,7 +25,7 @@ export default function App({ Component, pageProps }) {
       </Head>
       {isDevelopment && isSocket && <ClientReload />}
       <Analytics />
-      <LayoutWrapper>
+      <LayoutWrapper isHome={pathname === '/'}>
         <Component {...pageProps} />
       </LayoutWrapper>
     </ThemeProvider>
