@@ -62,7 +62,7 @@ Having to manually press a button to ignite the fuel mixture for thousands of ti
 ### A combustion test sample
 
 A typical combustion test shot in slow motion using a smartphone camera would look like this.
-{{< youtube -Ot1ehs52Ic >}}
+https://youtu.be/Ot1ehs52Ic
 
 ## Results
 
