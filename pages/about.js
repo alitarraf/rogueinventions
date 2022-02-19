@@ -24,7 +24,7 @@ export default function About({ authorDetails }) {
       <div className="divide-y">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <h2 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
-            Recommended Reads
+            Recommended Tools
           </h2>
         </div>
         <div className="grid items-start space-y-2 pt-12 xl:grid-cols-3 xl:gap-x-8">
@@ -100,31 +100,6 @@ export default function About({ authorDetails }) {
               </div>
             </div>
           </Link>
-        </div>
-      </div>
-
-      <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            Quotes
-          </h1>
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            Sayings that resonated with me.
-          </p>
-        </div>
-        <div className="container py-12">
-          <div className="-m-4 flex flex-wrap">
-            {quotesData.map((d) => (
-              <Card
-                key={d.author + String(Math.ceil(Math.random() * 100000))}
-                title={d.author}
-                // title={d.title}
-                description={d.quote}
-                // imgSrc={d.imgSrc}
-                // href={d.href}
-              />
-            ))}
-          </div>
         </div>
       </div>
     </div>

@@ -1,21 +1,21 @@
 const siteMetadata = {
-  title: 'Imagine a world...',
-  author: 'Ali Tarraf',
-  headerTitle: '@AliTarraf',
-  description: 'Ali Tarraf personal website.',
+  title: 'Rogue Inventions',
+  author: 'Rogue Inventor',
+  headerTitle: '@Rogue Inventions',
+  description: 'Dream,Design,Build,Launch Rogue Inventions',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteUrl: 'https://rogueinventions.com',
+  siteRepo: 'https://github.com/alitarraf/rogueinventions',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.jpg',
   socialBanner: '/static/images/twitter-card.png',
   // email: '',
   github: 'https://github.com/alitarraf',
-  twitter: 'https://twitter.com/alitarraf',
+  // twitter: 'https://twitter.com/alitarraf',
   // facebook: 'https://www.facebook.com/alitarraf1/',
-  youtube: 'https://youtube.com/alitarraf',
-  linkedin: 'https://www.linkedin.com/in/alitarraf',
+  youtube: 'https://youtube.com/rogueinventions',
+  // linkedin: 'https://www.linkedin.com/in/alitarraf',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
@@ -29,7 +29,7 @@ const siteMetadata = {
   newsletter: {
     // supports mailchimp, buttondown, convertkit, klaviyo
     // Please add your .env file and modify it according to your selection
-    provider: 'buttondown',
+    // provider: 'buttondown',
   },
   comment: {
     // If you want to use a commenting system other than giscus you have to add it to the
