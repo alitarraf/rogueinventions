@@ -31,18 +31,19 @@ export default function Home({ posts }) {
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
-            const { slug, date, title, summary, tags } = frontMatter
+            const { slug, date, title, summary, tags, youtubeUrl } = frontMatter
             return (
               <li key={slug} className="py-12">
                 <article>
-                  <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
+                  {/* <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0"> */}
+                  <div className="grid-cols-1 gap-4 xl:grid xl:grid-cols-4">
                     <dl>
                       <dt className="sr-only">Published on</dt>
                       <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                         <time dateTime={date}>{formatDate(date)}</time>
                       </dd>
                     </dl>
-                    <div className="space-y-5 xl:col-span-3">
+                    <div className="space-y-5 xl:col-span-2">
                       <div className="space-y-6">
                         <div>
                           <h2 className="text-2xl font-bold leading-8 tracking-tight">
@@ -72,6 +73,17 @@ export default function Home({ posts }) {
                           Read more &rarr;
                         </Link>
                       </div>
+                    </div>
+                    <div>
+                      <iframe
+                        width="250"
+                        height="100%"
+                        src={youtubeUrl}
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      ></iframe>
                     </div>
                   </div>
                 </article>

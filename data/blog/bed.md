@@ -1,15 +1,11 @@
 ---
-date: 2016-12-24 06:31:01+00:00
-title: Machining aluminum wiper for a metal 3D printer
-tags: ['machining', '3D printing']
+date: 2022-02-21 06:31:01+00:00
+title: Floating Bed with 4x4 and 2x4
+tags: ['Furniture', 'Woodworking']
 author: Ali Tarraf
-summary: Chips mountain.
+summary: Float in your sleep on a bed your built with your hands.
+youtubeUrl:
+tiktokUrl:
 ---
 
-Machining aluminum 6061 for a friend who is working on a metal 3D printer. You got to love the mountain of chips!
-
-Squaring off big parts is always an issue, specially that you have to clamp down the parts and make sure it is aligned with a dial indicator.
-
-I had some issues with my end mill leaving traces on the part face. I should have probably used a different one.
-
-Initial cuts to approximate shape of the wiper.
+This is a work in progress. Video of build will come out soon.

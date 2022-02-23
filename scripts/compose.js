@@ -41,6 +41,7 @@ const genFrontMatter = (answers) => {
   images: []
   layout: ${answers.layout}
   canonicalUrl: ${answers.canonicalUrl}
+  youtubeUrl: ${answers.youtubeUrl}
   `
 
   if (answers.authors.length > 0) {
